@@ -1,0 +1,562 @@
+Feature: Register functionality with incorrect Email address
+  I want to verify the error messgae displayed when incorrect e mail address is enetered while registering
+
+  #Background : I am on the home page
+  Scenario: Error messgae should be displayed when incorrect e mail address is enetered while registering [90m# incorrectEmailRegister.feature:6[0m
+    [32mGiven [0m[32mI am on the Sign in page[0m                                                                        [90m# StepDefinition.I_am_on_the_Sign_in_page()[0m
+    [32mWhen [0m[32mI enter incorrect email address and clicks on create an account[0m                                  [90m# StepDefinition.I_enter_incorrect_email_address_and_clicks_on_create_an_account()[0m
+    [32mThen [0m[32mI should see an error message[0m                                                                    [90m# StepDefinition.I_should_see_an_error_message()[0m
+Feature: Verify working of MegaMenu
+  I want to verify the working of MegaMenu (Dresses -> Summer dresses)
+[31mFailure in after hook:[0m[31mHooks.embedScreenshot(Scenario)[0m
+[31mMessage: [0m[31morg.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Shubhams-MacBook-Pro.local', ip: 'fe80:0:0:0:c4d:72e0:4794:d7fd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3002, moz:profile: /var/folders/jq/3hqzdz350h3..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+Session ID: 5b7a4224-57c4-8d4a-9046-c78a9165c538
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)
+	at userStepDefinitions.Hooks.embedScreenshot(Hooks.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[0m
+      [31morg.openqa.selenium.SessionNotCreatedException: Tried to run command without establishing a connection
+      Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+      System info: host: 'Shubhams-MacBook-Pro.local', ip: 'fe80:0:0:0:c4d:72e0:4794:d7fd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_101'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3002, moz:profile: /var/folders/jq/3hqzdz350h3..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 5b7a4224-57c4-8d4a-9046-c78a9165c538
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+      	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:497)
+      	at userStepDefinitions.Hooks.embedScreenshot(Hooks.java:55)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+      	at cucumber.runtime.Runtime.runAfterHooks(Runtime.java:206)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:46)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+      	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+      	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+      [0m
+
+  #Background : I am on the home page
+  Scenario: Working of MegaMenu               [90m# megaMenu.feature:6[0m
+    [31mGiven [0m[31mI am on the Sign in page[0m            [90m# StepDefinition.I_am_on_the_Sign_in_page()[0m
+      [31morg.openqa.selenium.WebDriverException: Failed to decode response from marionette
+      Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+      System info: host: 'Shubhams-MacBook-Pro.local', ip: 'fe80:0:0:0:c4d:72e0:4794:d7fd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_101'
+      Driver info: org.openqa.selenium.firefox.FirefoxDriver
+      Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 58.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:headless: false, moz:processID: 3002, moz:profile: /var/folders/jq/3hqzdz350h3..., moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 17.2.0, rotatable: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}}
+      Session ID: 5b7a4224-57c4-8d4a-9046-c78a9165c538
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteTimeouts.implicitlyWait(RemoteWebDriver.java:835)
+      	at userStepDefinitions.StepDefinition.I_am_on_the_Sign_in_page(StepDefinition.java:44)
+      	at ✽.Given I am on the Sign in page(megaMenu.feature:7)
+      [0m
+    [36mWhen [0m[36mI hover on Dresses on MegaMenu[0m       [90m# StepDefinition.I_hover_on_Dresses_on_MegaMenu()[0m
+    [36mAnd [0m[36mI click on Summer Dresses on sub menu[0m [90m# StepDefinition.I_click_on_Summer_Dresses_on_sub_menu()[0m
+    [36mThen [0m[36mI should see Summer Dresses page[0m     [90m# StepDefinition.I_should_see_Summer_Dresses_page()[0m
+Feature: Validation of product grid arrangement based on Sort By price.
+  I want to verify the arrangement of product grid after clicking on Sort By: Price on the Summer Dresses page
+[31mFailure in before hook:[0m[31mHooks.openBrowser()[0m
+[31mMessage: [0m[31morg.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Shubhams-MacBook-Pro.local', ip: 'fe80:0:0:0:c4d:72e0:4794:d7fd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_101'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:        0x105b06c94 - backtrace::backtrace::trace::hc44b8b6afeb219e7
+   1:        0x105b0706f - backtrace::capture::Backtrace::new::he142908a5a8f9eda
+   2:        0x1057974bf - webdriver::error::WebDriverError::new::hebec477f9df08343
+   3:        0x1057b1a2d - geckodriver::marionette::MarionetteConnection::connect::h7c5f83408cb30b4b
+   4:        0x1057a0b05 - geckodriver::marionette::MarionetteHandler::create_connection::he8ee0c52c2a1b9c4
+   5:        0x1057a3031 - _$LT$geckodriver..marionette..MarionetteHandler$u20$as$u20$webdriver..server..WebDriverHandler$LT$geckodriver..marionette..GeckoExtensionRoute$GT$$GT$::handle_command::h2cefa41166ba9494
+   6:        0x10572c303 - _$LT$webdriver..server..Dispatcher$LT$T$C$$u20$U$GT$$GT$::run::h77fa1167834370c3
+   7:        0x1057980da - webdriver::server::start::_$u7b$$u7b$closure$u7d$$u7d$::hffbd004b475f3665
+   8:        0x10569022a - std::sys_common::backtrace::__rust_begin_short_backtrace::hec0d8ff74429f694
+   9:        0x1056a12b3 - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::_$u7b$$u7b$closure$u7d$$u7d$::h53c5ad07da085d9c
+  10:        0x10564f13a - _$LT$std..panic..AssertUnwindSafe$LT$F$GT$$u20$as$u20$core..ops..function..FnOnce$LT$$LP$$RP$$GT$$GT$::call_once::h83632791b6453edc
+  11:        0x1056a1fb9 - std::panicking::try::do_call::h86aca16d754ce830
+  12:        0x105e28bbc - __rust_maybe_catch_panic
+  13:        0x1056a1cac - std::panicking::try::hf8ca0c1321b41dad
+  14:        0x10569ec75 - std::panic::catch_unwind::hdf974745031c26a9
+  15:        0x1056a099e - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::h34a325ccd27a7244
+  16:        0x10570eba3 - _$LT$F$u20$as$u20$alloc..boxed..FnBox$LT$A$GT$$GT$::call_box::h7e4138f98898fbeb
+  17:        0x105e24e2b - std::sys::imp::thread::Thread::new::thread_start::h0a04b176230f4d22
+  18:     0x7fff752956c0 - _pthread_body
+  19:     0x7fff7529556c - _pthread_start
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+	at userStepDefinitions.Hooks.openBrowser(Hooks.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[0m
+      [31morg.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+      Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+      System info: host: 'Shubhams-MacBook-Pro.local', ip: 'fe80:0:0:0:c4d:72e0:4794:d7fd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_101'
+      Driver info: driver.version: FirefoxDriver
+      remote stacktrace: stack backtrace:
+         0:        0x105b06c94 - backtrace::backtrace::trace::hc44b8b6afeb219e7
+         1:        0x105b0706f - backtrace::capture::Backtrace::new::he142908a5a8f9eda
+         2:        0x1057974bf - webdriver::error::WebDriverError::new::hebec477f9df08343
+         3:        0x1057b1a2d - geckodriver::marionette::MarionetteConnection::connect::h7c5f83408cb30b4b
+         4:        0x1057a0b05 - geckodriver::marionette::MarionetteHandler::create_connection::he8ee0c52c2a1b9c4
+         5:        0x1057a3031 - _$LT$geckodriver..marionette..MarionetteHandler$u20$as$u20$webdriver..server..WebDriverHandler$LT$geckodriver..marionette..GeckoExtensionRoute$GT$$GT$::handle_command::h2cefa41166ba9494
+         6:        0x10572c303 - _$LT$webdriver..server..Dispatcher$LT$T$C$$u20$U$GT$$GT$::run::h77fa1167834370c3
+         7:        0x1057980da - webdriver::server::start::_$u7b$$u7b$closure$u7d$$u7d$::hffbd004b475f3665
+         8:        0x10569022a - std::sys_common::backtrace::__rust_begin_short_backtrace::hec0d8ff74429f694
+         9:        0x1056a12b3 - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::_$u7b$$u7b$closure$u7d$$u7d$::h53c5ad07da085d9c
+        10:        0x10564f13a - _$LT$std..panic..AssertUnwindSafe$LT$F$GT$$u20$as$u20$core..ops..function..FnOnce$LT$$LP$$RP$$GT$$GT$::call_once::h83632791b6453edc
+        11:        0x1056a1fb9 - std::panicking::try::do_call::h86aca16d754ce830
+        12:        0x105e28bbc - __rust_maybe_catch_panic
+        13:        0x1056a1cac - std::panicking::try::hf8ca0c1321b41dad
+        14:        0x10569ec75 - std::panic::catch_unwind::hdf974745031c26a9
+        15:        0x1056a099e - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::h34a325ccd27a7244
+        16:        0x10570eba3 - _$LT$F$u20$as$u20$alloc..boxed..FnBox$LT$A$GT$$GT$::call_box::h7e4138f98898fbeb
+        17:        0x105e24e2b - std::sys::imp::thread::Thread::new::thread_start::h0a04b176230f4d22
+        18:     0x7fff752956c0 - _pthread_body
+        19:     0x7fff7529556c - _pthread_start
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+      	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+      	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+      	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+      	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+      	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+      	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+      	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+      	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+      	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+      	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+      	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+      	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+      	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+      	at userStepDefinitions.Hooks.openBrowser(Hooks.java:31)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+      	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+      	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+      	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+      [0m
+
+  Scenario: Arrangement of product grid on Summer Dresses page [90m# productGrid.feature:4[0m
+    [36mGiven [0m[36mI am on Summer Dresses page[0m                          [90m# StepDefinition.I_am_on_Summer_Dresses_page()[0m
+    [36mWhen [0m[36mI click on Sort By Price[0m                              [90m# StepDefinition.I_click_on_Sort_By_Price()[0m
+    [36mThen [0m[36mI should see the product grid is arranged properly[0m    [90m# StepDefinition.I_should_see_the_product_grid_is_arranged_properly()[0m
+Feature: Register functionality with a valid email address
+  As a user, I want to register with a valid email address
+[31mFailure in before hook:[0m[31mHooks.openBrowser()[0m
+[31mMessage: [0m[31morg.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+System info: host: 'Shubhams-MacBook-Pro.local', ip: 'fe80:0:0:0:c4d:72e0:4794:d7fd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_101'
+Driver info: driver.version: FirefoxDriver
+remote stacktrace: stack backtrace:
+   0:        0x103bc0c94 - backtrace::backtrace::trace::hc44b8b6afeb219e7
+   1:        0x103bc106f - backtrace::capture::Backtrace::new::he142908a5a8f9eda
+   2:        0x1038514bf - webdriver::error::WebDriverError::new::hebec477f9df08343
+   3:        0x10386ba2d - geckodriver::marionette::MarionetteConnection::connect::h7c5f83408cb30b4b
+   4:        0x10385ab05 - geckodriver::marionette::MarionetteHandler::create_connection::he8ee0c52c2a1b9c4
+   5:        0x10385d031 - _$LT$geckodriver..marionette..MarionetteHandler$u20$as$u20$webdriver..server..WebDriverHandler$LT$geckodriver..marionette..GeckoExtensionRoute$GT$$GT$::handle_command::h2cefa41166ba9494
+   6:        0x1037e6303 - _$LT$webdriver..server..Dispatcher$LT$T$C$$u20$U$GT$$GT$::run::h77fa1167834370c3
+   7:        0x1038520da - webdriver::server::start::_$u7b$$u7b$closure$u7d$$u7d$::hffbd004b475f3665
+   8:        0x10374a22a - std::sys_common::backtrace::__rust_begin_short_backtrace::hec0d8ff74429f694
+   9:        0x10375b2b3 - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::_$u7b$$u7b$closure$u7d$$u7d$::h53c5ad07da085d9c
+  10:        0x10370913a - _$LT$std..panic..AssertUnwindSafe$LT$F$GT$$u20$as$u20$core..ops..function..FnOnce$LT$$LP$$RP$$GT$$GT$::call_once::h83632791b6453edc
+  11:        0x10375bfb9 - std::panicking::try::do_call::h86aca16d754ce830
+  12:        0x103ee2bbc - __rust_maybe_catch_panic
+  13:        0x10375bcac - std::panicking::try::hf8ca0c1321b41dad
+  14:        0x103758c75 - std::panic::catch_unwind::hdf974745031c26a9
+  15:        0x10375a99e - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::h34a325ccd27a7244
+  16:        0x1037c8ba3 - _$LT$F$u20$as$u20$alloc..boxed..FnBox$LT$A$GT$$GT$::call_box::h7e4138f98898fbeb
+  17:        0x103edee2b - std::sys::imp::thread::Thread::new::thread_start::h0a04b176230f4d22
+  18:     0x7fff752956c0 - _pthread_body
+  19:     0x7fff7529556c - _pthread_start
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+	at userStepDefinitions.Hooks.openBrowser(Hooks.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:40)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:34)
+	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+[0m
+      [31morg.openqa.selenium.WebDriverException: Process unexpectedly closed with status: 0
+      Build info: version: '3.9.1', revision: '63f7b50', time: '2018-02-07T22:25:02.294Z'
+      System info: host: 'Shubhams-MacBook-Pro.local', ip: 'fe80:0:0:0:c4d:72e0:4794:d7fd%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.1', java.version: '1.8.0_101'
+      Driver info: driver.version: FirefoxDriver
+      remote stacktrace: stack backtrace:
+         0:        0x103bc0c94 - backtrace::backtrace::trace::hc44b8b6afeb219e7
+         1:        0x103bc106f - backtrace::capture::Backtrace::new::he142908a5a8f9eda
+         2:        0x1038514bf - webdriver::error::WebDriverError::new::hebec477f9df08343
+         3:        0x10386ba2d - geckodriver::marionette::MarionetteConnection::connect::h7c5f83408cb30b4b
+         4:        0x10385ab05 - geckodriver::marionette::MarionetteHandler::create_connection::he8ee0c52c2a1b9c4
+         5:        0x10385d031 - _$LT$geckodriver..marionette..MarionetteHandler$u20$as$u20$webdriver..server..WebDriverHandler$LT$geckodriver..marionette..GeckoExtensionRoute$GT$$GT$::handle_command::h2cefa41166ba9494
+         6:        0x1037e6303 - _$LT$webdriver..server..Dispatcher$LT$T$C$$u20$U$GT$$GT$::run::h77fa1167834370c3
+         7:        0x1038520da - webdriver::server::start::_$u7b$$u7b$closure$u7d$$u7d$::hffbd004b475f3665
+         8:        0x10374a22a - std::sys_common::backtrace::__rust_begin_short_backtrace::hec0d8ff74429f694
+         9:        0x10375b2b3 - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::_$u7b$$u7b$closure$u7d$$u7d$::h53c5ad07da085d9c
+        10:        0x10370913a - _$LT$std..panic..AssertUnwindSafe$LT$F$GT$$u20$as$u20$core..ops..function..FnOnce$LT$$LP$$RP$$GT$$GT$::call_once::h83632791b6453edc
+        11:        0x10375bfb9 - std::panicking::try::do_call::h86aca16d754ce830
+        12:        0x103ee2bbc - __rust_maybe_catch_panic
+        13:        0x10375bcac - std::panicking::try::hf8ca0c1321b41dad
+        14:        0x103758c75 - std::panic::catch_unwind::hdf974745031c26a9
+        15:        0x10375a99e - std::thread::Builder::spawn::_$u7b$$u7b$closure$u7d$$u7d$::h34a325ccd27a7244
+        16:        0x1037c8ba3 - _$LT$F$u20$as$u20$alloc..boxed..FnBox$LT$A$GT$$GT$::call_box::h7e4138f98898fbeb
+        17:        0x103edee2b - std::sys::imp::thread::Thread::new::thread_start::h0a04b176230f4d22
+        18:     0x7fff752956c0 - _pthread_body
+        19:     0x7fff7529556c - _pthread_start
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+      	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+      	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:123)
+      	at java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)
+      	at java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+      	at java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)
+      	at java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)
+      	at java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
+      	at java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)
+      	at java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)
+      	at java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+      	at java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:126)
+      	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:138)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:601)
+      	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:219)
+      	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:142)
+      	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:120)
+      	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:98)
+      	at userStepDefinitions.Hooks.openBrowser(Hooks.java:31)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at cucumber.runtime.Utils$1.call(Utils.java:40)
+      	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+      	at cucumber.runtime.Utils.invoke(Utils.java:34)
+      	at cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)
+      	at cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:224)
+      	at cucumber.runtime.Runtime.runHooks(Runtime.java:212)
+      	at cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:202)
+      	at cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)
+      	at cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:102)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)
+      	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:95)
+      	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:38)
+      	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+      	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+      	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+      	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+      	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+      	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+      	at cucumber.api.junit.Cucumber.run(Cucumber.java:100)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+      	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:498)
+      	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+      	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+      	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+      	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+      	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+      [0m
+
+  #Background : I am on the home page and navigate to the sign in page
+  Scenario: I should be able to register with a valid email address                 [90m# validEmailRegister.feature:6[0m
+    [36mGiven [0m[36mI am on the Sign in page[0m                                                  [90m# StepDefinition.I_am_on_the_Sign_in_page()[0m
+    [36mWhen [0m[36mI fill in valid Email address and click on create an account[0m               [90m# StepDefinition.I_fill_in_valid_Email_address_and_click_on_create_an_account()[0m
+    [36mAnd [0m[36mI fill in personal information on create Account page and click on Register[0m [90m# StepDefinition.I_fill_in_personal_information_on_create_Account_page_and_click_on_Register()[0m
+    [36mThen [0m[36mI should see My Account page[0m                                               [90m# StepDefinition.user_should_see_My_Account_page()[0m

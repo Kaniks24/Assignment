@@ -1,0 +1,27 @@
+Feature: Search SecurePay on google and visit SecurePay website
+  I want to verify the search results retrieval for Securepay on google and visit the SecurePay website.
+
+  Scenario: SecurePay should be retrieved in the search results on google and click and navigate to SecurePay website [90m# src/test/resources/features/searchAndClickSecurePay.feature:4[0m
+    [32mGiven [0m[32mI am on google serach engine page[0m                                                                           [90m# SearchAndClickStepDefinition.iAmOnGoogleSerachEnginePage()[0m
+    [32mWhen [0m[32mI enter SecurePay in the search bar[0m                                                                          [90m# SearchAndClickStepDefinition.iEnterSecurePayInTheSearchBar()[0m
+    [32mThen [0m[32mI should see SecurePay searches in the result[0m                                                                [90m# SearchAndClickStepDefinition.iShouldSeeSecurePaySearchesInTheResult()[0m
+    [32mAnd [0m[32mI click on SecurePay link from the search results[0m                                                             [90m# SearchAndClickStepDefinition.iClickOnSecurePayLinkFromTheSearchResults()[0m
+    [32mThen [0m[32mI should navigate to SecurePay website[0m                                                                       [90m# SearchAndClickStepDefinition.iShouldNavigateToSecurePayWebsite()[0m
+
+Feature: Navigate to contact us page and verify the page is loaded
+  I want to navigate to contact us page on SecurePay website and verify that contact us page is loaded
+
+  Background:                       [90m# src/test/resources/features/testContactUs.feature:4[0m
+    [32mGiven [0m[32mI am on SecurePay Website[0m [90m# TestContactUsStepDefinition.iAmOnSecurePayWebsite()[0m
+
+  Scenario: Navigate and verify the contact us page [90m# src/test/resources/features/testContactUs.feature:7[0m
+    [32mWhen [0m[32mI click on Contact Us link[0m                 [90m# TestContactUsStepDefinition.iClickOnContactUsLink()[0m
+    [32mThen [0m[32mContact us page should be loaded[0m           [90m# TestContactUsStepDefinition.contactUsPageShouldBeLoaded()[0m
+
+  Background:                       [90m# src/test/resources/features/testContactUs.feature:4[0m
+    [32mGiven [0m[32mI am on SecurePay Website[0m [90m# TestContactUsStepDefinition.iAmOnSecurePayWebsite()[0m
+
+  Scenario: Verify that the contact us form is filled with random data [90m# src/test/resources/features/testContactUs.feature:11[0m
+    [32mWhen [0m[32mI click on Contact Us link[0m                                    [90m# TestContactUsStepDefinition.iClickOnContactUsLink()[0m
+    [32mAnd [0m[32mI fill in the contact us form with the random generated data[0m   [90m# TestContactUsStepDefinition.iFillInTheContactUsFormWithTheRandomGeneratedData()[0m
+    [32mThen [0m[32mI should see the generated data[0m                               [90m# TestContactUsStepDefinition.iShouldSeeTheGeneratedData()[0m
